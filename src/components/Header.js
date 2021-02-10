@@ -1,21 +1,18 @@
 import React from 'react'
 
 import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+import portfolioPicture from '../assets/images/portfolioPicture.jpg'
 
 const Header = () => (
   <header id="header">
     <div className="inner">
-      <a href="#" className="image avatar">
-        <img src={avatar} alt="" />
+      <a href="#" className="image portfolioPicture">
+        <img src={portfolioPicture} alt="" />
       </a>
       <h1>
-        <strong>I am Strata</strong>, a super simple
-        <br />
-        responsive site template freebie
-        <br />
-        crafted by <a href="http://html5up.net">HTML5 UP</a>.
+        <strong>Bahay Gulle Bilgi</strong>
       </h1>
+      <h2>Software Developer</h2>
     </div>
     <Footer />
   </header>
