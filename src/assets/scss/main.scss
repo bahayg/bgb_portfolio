@@ -47,7 +47,7 @@
 );
 
 $size-header-width: 32%;
-$size-header-pad: 1.5em;
+$size-header-pad: 0.5em;
 
 /* Basic */
 
@@ -261,7 +261,7 @@ header {
 
   &.major {
     h2 {
-      font-size: 2em;
+      font-size: 2.2em;
     }
   }
 }
@@ -963,7 +963,7 @@ input[type='button'],
 
   > .inner {
     @include vendor('flex-grow', '1');
-    margin: 0 0 ($size-header-pad * 0.5) 0;
+    margin: ($size-header-pad * 9.5) 0 ($size-header-pad * 0.5) 0;
   }
 
   strong,
@@ -973,7 +973,7 @@ input[type='button'],
 
   h2 {
     color: _palette(accent2, fg);
-    font-size: 1.85em;
+    font-size: 1.55em;
   }
   h3,
   h4,
@@ -984,14 +984,14 @@ input[type='button'],
 
   h1 {
     color: _palette(accent2, fg);
-    font-size: 3.05em;
+    font-size: 2.85em;
     line-height: 1.75em;
     margin: 0;
   }
 
   .image.portfolioPicture {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
-    width: 13.25em;
+    width: 9.25em;
   }
 }
 
@@ -999,7 +999,7 @@ input[type='button'],
 
 #footer {
   .icons {
-    margin: (_size(element-margin) * 0.5) 0 (_size(element-margin) * 4.5) 0;
+    margin: (_size(element-margin) * 1.2) 0 (_size(element-margin) * 4.5) 0;
 
     a {
       color: _palette(accent2, fg-light);
@@ -1037,9 +1037,9 @@ input[type='button'],
 
 #main {
   margin-left: $size-header-width;
-  max-width: 50em + $size-header-pad;
-  padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
-    $size-header-pad;
+  max-width: 56em + $size-header-pad;
+  padding: ($size-header-pad * 2) ($size-header-pad * 4) $size-header-pad
+    ($size-header-pad * 6);
   width: calc(100% - #{$size-header-width});
 
   > section {

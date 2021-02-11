@@ -26,6 +26,11 @@ const Footer = () => (
           </a>
         </li>
         <li>
+          <a href="mailto:<bahayg@gmail.com>" className="icon fa-envelope">
+            <span className="label">Email</span>
+          </a>
+        </li>
+        <li>
           <a
             href="https://drive.google.com/file/d/18QQ9UuYVDusSE-7ivwMTUPlXsPw35frM/view"
             className="icon fa-file"
@@ -33,11 +38,6 @@ const Footer = () => (
             <span className="label">Resume</span>
           </a>
         </li>
-        {/* <li>
-          <a href="#" className="icon fa-envelope">
-            <span className="label">Email</span>
-          </a>
-        </li> */}
       </ul>
       <ul className="copyright">
         <li>&copy; Gatsby Starter Strata</li>
