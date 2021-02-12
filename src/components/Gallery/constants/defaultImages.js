@@ -23,7 +23,7 @@ export const DEFAULT_IMAGES = [
     id: '2',
     source: full02,
     thumbnail: thumb02,
-    caption: 'Flatplate',
+    caption: 'Flat Plate',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
   },
   {
@@ -37,7 +37,7 @@ export const DEFAULT_IMAGES = [
     id: '4',
     source: full04,
     thumbnail: thumb04,
-    caption: 'Bowmom',
+    caption: "BowMom's Capsule",
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
   },
   // {

@@ -1561,3 +1561,21 @@ body.is-touch {
     width: 100%;
   }
 }
+
+// Technical skills logos
+ul {
+  &.logos {
+    list-style: none;
+    li {
+      display: inline-block;
+      line-height: 2em;
+      margin-left: 2.75em;
+      margin-top: 1.25em;
+      padding-left: 1.75em;
+      vertical-align: top;
+    }
+    img {
+      display: block;
+    }
+  }
+}
