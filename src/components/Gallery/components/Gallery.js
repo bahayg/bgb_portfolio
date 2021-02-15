@@ -8,27 +8,37 @@ const Gallery = ({ images = DEFAULT_IMAGES }) => {
   const [lightboxIsOpen, setLightboxIsOpen] = useState(false)
   const [selectedIndex, setSelectedIndex] = useState(0)
 
-  const toggleLightbox = useCallback(selectedIndex => {
-    setLightboxIsOpen(!lightboxIsOpen)
-    setSelectedIndex(selectedIndex)
-  }, [lightboxIsOpen])
+  const toggleLightbox = useCallback(
+    (selectedIndex) => {
+      setLightboxIsOpen(!lightboxIsOpen)
+      setSelectedIndex(selectedIndex)
+    },
+    [lightboxIsOpen]
+  )
 
   return (
     <div>
-      {images && (<div className="row">
-        {images.map((obj, i) => {
-        return (<GalleryItem
-          id={obj.id}
-          source={obj.source}
-          thumbnail={obj.thumbnail}
-          caption={obj.caption}
-          description={obj.description}
-          position={obj.position}
-          toggleLightbox={obj.toggleLightbox}
-          position={i}
-          toggleLightbox={toggleLightbox}
-        />); 
-        })}
+      {images && (
+        <div className="row">
+          {images.map((obj, i) => {
+            return (
+              <GalleryItem
+                id={obj.id}
+                source={obj.source}
+                thumbnail={obj.thumbnail}
+                caption={obj.caption}
+                description={obj.description}
+                frontend={obj.frontend}
+                backend={obj.backend}
+                live={obj.live}
+                github={obj.github}
+                position={obj.position}
+                toggleLightbox={obj.toggleLightbox}
+                position={i}
+                toggleLightbox={toggleLightbox}
+              />
+            )
+          })}
         </div>
       )}
       <ModalGateway>
