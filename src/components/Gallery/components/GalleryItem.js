@@ -24,14 +24,27 @@ const GalleryItem = ({
 
   return (
     <article key={id} className="6u 12u$(xsmall) work-item">
-      <a
+      <div>
+        <iframe
+          width="373"
+          height="210"
+          src={source}
+          //   poster={thumbnail}
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          style={{ padding: '10px' }}
+        ></iframe>
+      </div>
+
+      {/* <a
         className="image fit thumb"
         href={source}
         target="_blank"
         //onClick={onClick}
       >
         <img src={thumbnail} />
-      </a>
+      </a> */}
 
       <h3>{caption}</h3>
       <p>{description}</p>
@@ -54,7 +67,7 @@ const GalleryItem = ({
       ) : null}
       {github ? (
         <a href={github} target="_blank" className="button">
-          Github
+          Github Repo
         </a>
       ) : null}
     </article>
