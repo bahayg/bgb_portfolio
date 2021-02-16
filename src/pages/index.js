@@ -3,17 +3,7 @@ import Helmet from 'react-helmet'
 
 import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
-
-import jslogo from '../assets/images/logos/JS.png'
-import rubylogo from '../assets/images/logos/Ruby.png'
-import reactlogo from '../assets/images/logos/React.png'
-import railslogo from '../assets/images/logos/Rails.png'
-import htmllogo from '../assets/images/logos/HTML.png'
-import csslogo from '../assets/images/logos/CSS.png'
-import sqllogo from '../assets/images/logos/SQL.png'
-import postgresqllogo from '../assets/images/logos/PostgreSQL.png'
-import gitlogo from '../assets/images/logos/Git.png'
-import githublogo from '../assets/images/logos/GitHub.png'
+import Section2 from '../components/section2'
 
 const HomeIndex = () => {
   const siteTitle = 'Bahay Gulle Bilgi | Software Developer'
@@ -35,7 +25,7 @@ const HomeIndex = () => {
       <div id="main">
         <section id="one">
           <header className="major">
-            <h2>About Me</h2>
+            <h2>About</h2>
           </header>
           {!showMore ? (
             <p>
@@ -75,68 +65,11 @@ const HomeIndex = () => {
           <header className="major">
             <h2>Technical Skills</h2>
           </header>
-          <ul className="logos">
-            <li>
-              <img src={jslogo} alt="JS logo" />
-              <span className="caption">JavaScript</span>
-            </li>
-            <li>
-              <img src={rubylogo} alt="Ruby logo" />
-              <span className="caption" style={{ marginLeft: '0.8em' }}>
-                Ruby
-              </span>
-            </li>
-            <li>
-              <img src={reactlogo} alt="React logo" />
-              <span className="caption" style={{ marginLeft: '0.8em' }}>
-                React
-              </span>
-            </li>
-            <li>
-              <img src={railslogo} alt="Rails logo" />
-              <span className="caption" style={{ marginLeft: '1em' }}>
-                Rails
-              </span>
-            </li>
-            <li>
-              <img src={htmllogo} alt="HTML logo" />
-              <span className="caption" style={{ marginLeft: '0.7em' }}>
-                HTML
-              </span>
-            </li>
-            <li>
-              <img src={csslogo} alt="CSS logo" />
-              <span className="caption" style={{ marginLeft: '1em' }}>
-                CSS
-              </span>
-            </li>
-            <li>
-              <img src={sqllogo} alt="SQL logo" />
-              <span className="caption" style={{ marginLeft: '1.2em' }}>
-                SQL
-              </span>
-            </li>
-            <li>
-              <img src={postgresqllogo} alt="PostgreSQL logo" />
-              <span className="caption">PostgreSQL</span>
-            </li>
-            <li>
-              <img src={gitlogo} alt="Git logo" />
-              <span className="caption" style={{ marginLeft: '1.4em' }}>
-                Git
-              </span>
-            </li>
-            <li>
-              <img src={githublogo} alt="GitHub logo" />
-              <span className="caption" style={{ marginLeft: '0.6em' }}>
-                GitHub
-              </span>
-            </li>
-          </ul>
+          <Section2 />
         </section>
         <section id="two">
           <header className="major">
-            <h2>My Projects</h2>
+            <h2>Projects</h2>
           </header>
 
           <Gallery />
@@ -150,9 +83,55 @@ const HomeIndex = () => {
           </ul> */}
         </section>
 
+        <section id="five">
+          <header className="major">
+            <h2>Selected Articles</h2>
+            <ul className="labeled-icons">
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://medium.com/swlh/javascript-remove-duplicates-from-sorted-array-in-place-d3d959fb4d77?source=friends_link&sk=0cdadba6de4f0a6f6ff4b50b85d53361"
+                >
+                  {/* <img src={medium1} /> <br /> */}
+                  Remove Duplicates From Sorted Array in Place
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://medium.com/javascript-in-plain-english/javascript-reverse-linked-list-a2d235d64548?source=friends_link&sk=efd7febdeee4219812e21033ab9b33f7"
+                >
+                  {/* <img src={medium2} /> <br /> */}
+                  Reverse Linked List
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://medium.com/analytics-vidhya/javascript-check-valid-parentheses-with-a-stack-bc7b1bab26c2?source=friends_link&sk=47981315af12a900d66f148ed482fc8a"
+                >
+                  Check Valid Parentheses with a Stack
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://medium.com/swlh/javascript-three-ways-to-reverse-an-array-32f9819e9a97?source=friends_link&sk=26c7cbf378c280f2e9c2a28314650a7f"
+                >
+                  Three Ways to Reverse an Array
+                </a>
+              </li>
+            </ul>
+          </header>
+        </section>
+
         <section id="three">
           <header className="major">
-            <h2>Contact Me</h2>
+            <h2>Contact</h2>
           </header>
           {/* <p>
             Accumsan pellentesque commodo blandit enim arcu non at amet id arcu

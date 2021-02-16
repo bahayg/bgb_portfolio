@@ -28,6 +28,7 @@ const Gallery = ({ images = DEFAULT_IMAGES }) => {
                 thumbnail={obj.thumbnail}
                 caption={obj.caption}
                 description={obj.description}
+                tools={obj.tools}
                 frontend={obj.frontend}
                 backend={obj.backend}
                 live={obj.live}
