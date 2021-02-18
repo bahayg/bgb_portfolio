@@ -1,4 +1,5 @@
-import React, { useState, useCallback } from 'react'
+// import React, { useState, useCallback } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 //import Carousel, { Modal, ModalGateway } from 'react-images'
 import GalleryItem from './GalleryItem'

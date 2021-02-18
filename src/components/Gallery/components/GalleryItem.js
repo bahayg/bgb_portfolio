@@ -41,7 +41,7 @@ const GalleryItem = ({
           ></iframe>
         ) : (
           <a href={url} target="_blank" rel="noreferrer">
-            <img src={source} />
+            <img src={source} alt={captionSmall} />
           </a>
         )}
       </div>

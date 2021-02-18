@@ -7,7 +7,7 @@ const Header = () => (
   <header id="header">
     <div className="inner">
       <a href="#" className="image portfolioPicture">
-        <img src={portfolioPicture} alt="Bahay's picture" />
+        <img src={portfolioPicture} alt="Bahay's portrait" />
       </a>
       <h1>
         <strong>Bahay Gulle Bilgi</strong>
