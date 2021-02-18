@@ -3,17 +3,19 @@ import PropTypes from 'prop-types'
 
 const GalleryItem = ({
   id,
+  type,
   source,
-  thumbnail,
   caption,
+  captionSmall,
   description,
   tools,
   frontend,
   backend,
   live,
   github,
-  position,
-  toggleLightbox,
+  url,
+  //   position,
+  //   toggleLightbox,
 }) => {
   //   const onClick = useCallback(
   //     (e) => {
@@ -26,27 +28,24 @@ const GalleryItem = ({
   return (
     <article key={id} className="6u 12u$(xsmall) work-item">
       <div>
-        <iframe
-          title="Demo"
-          width="373"
-          height="210"
-          src={source}
-          //   poster={thumbnail}
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          style={{ padding: '10px' }}
-        ></iframe>
+        {type === 'video' ? (
+          <iframe
+            title="Demo"
+            width="373"
+            height="210"
+            src={source}
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ padding: '10px' }}
+          ></iframe>
+        ) : (
+          <a href={url} target="_blank" rel="noreferrer">
+            <img src={source} />
+          </a>
+        )}
       </div>
-      {/* <a
-        className="image fit thumb"
-        href={source}
-        target="_blank"
-        //onClick={onClick}
-      >
-        <img src={thumbnail} />
-      </a> */}
-      <h3>{caption}</h3>
+      {caption ? <h3>{caption}</h3> : <h3>{captionSmall}</h3>}
       <p>{description}</p> <br />
       <p>{tools}</p>
       {frontend ? (
@@ -76,17 +75,19 @@ const GalleryItem = ({
 GalleryItem.displayName = 'GalleryItem'
 GalleryItem.propTypes = {
   id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired,
   caption: PropTypes.string.isRequired,
+  captionSmall: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tools: PropTypes.string.isRequired,
   frontend: PropTypes.string.isRequired,
   backend: PropTypes.string.isRequired,
   live: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
-  toggleLightbox: PropTypes.func.isRequired,
+  url: PropTypes.string.isRequired,
+  //   position: PropTypes.string.isRequired,
+  //   toggleLightbox: PropTypes.func.isRequired,
 }
 
 export default GalleryItem
