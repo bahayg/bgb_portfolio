@@ -106,7 +106,7 @@ i {
 }
 
 p {
-  margin: 0 0 _size(element-margin) 0;
+  margin: 0 0 _size(element-margin) 0.5em;
 }
 
 h1,
@@ -717,7 +717,7 @@ ul {
 
     li {
       line-height: 1.75em;
-      margin: 1.5em 0 0 0;
+      margin: 1.5em 0 0 0.5em;
       padding-left: 2.25em;
       position: relative;
 
@@ -928,10 +928,26 @@ input[type='button'],
   }
 
   p {
-    font-size: 0.8em;
+    font-size: 0.85em;
     line-height: 1.5em;
     margin: 0;
   }
+}
+
+// Added by Bahay (Demo-zoom)
+
+.zoom {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.2s;
+  min-height: 150px;
+}
+
+.zoom:hover {
+  // -ms-transform: scale(1.2); /* IE 9 */
+  // -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 /* Header */

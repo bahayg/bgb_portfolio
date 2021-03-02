@@ -35,8 +35,9 @@ const HomeIndex = () => {
           </header>
           {!showMore ? (
             <p>
-              Full stack web developer with experience in JavaScript, UX
-              framework React, and Ruby on Rails based programming...
+              An aspiring full-stack software developer experienced in Ruby on
+              Rails and JavaScript based programming with a background in
+              academia.
               <ul className="actions" style={{ marginTop: 30 }}>
                 <li>
                   <a onClick={handleShowMore} className="button">
@@ -47,16 +48,32 @@ const HomeIndex = () => {
             </p>
           ) : (
             <p>
-              Full stack web developer with experience in JavaScript, UX
-              framework React, and Ruby on Rails based programming. Transitioned
-              from academia to coding to help technology companies bring
-              innovative solutions to their customers and partners. With a Ph.D.
-              in biochemistry and molecular biology, I developed strong skills
-              in problem solving, critical/creative thinking, and interpreting
-              data which translates well to writing code. I am excited to
-              contribute to tech projects with my passion for designing web
-              applications and the proven research, teaching, and mentoring
-              skills I have gained to date.
+              An aspiring full-stack software developer experienced in Ruby on
+              Rails and JavaScript based programming with a background in
+              academia.
+              <br />
+              <br />
+              Before making my transition into tech, I received my Ph.D. in
+              biochemistry and worked as an associate faculty at Cascadia
+              College. Having a background in science helped me to learn new
+              skills quickly and collaborate to solve complex problems as a
+              detail-oriented, organized, and focused team member. I’ve always
+              been intrigued by learning new things and coding became my new
+              love to make a difference in the lives of others.
+              <br />
+              <br />
+              My transition to programming started as a self-motivated student
+              and then I graduated from an intensive immersive software
+              engineering bootcamp in Seattle. Throughout my learning journey, I
+              was able to develop full-stack web applications and contribute to
+              an open-source project which gave me a chance to collaborate with
+              talented developers.
+              <br />
+              <br />I am passionate about using my technical skills along with
+              my research and teaching background in both independent and
+              collaborative settings to build products that help improve
+              people’s lives. I’m excited to join a company where continuous
+              learning, diversity, and collaboration are core values. 
               <ul className="actions" style={{ marginTop: 30 }}>
                 <li>
                   <a onClick={handleShowMore} className="button">
@@ -70,16 +87,16 @@ const HomeIndex = () => {
 
         <section id="two">
           <header className="major">
-            <h2>Technical Skills</h2>
+            <h2>Projects</h2>
           </header>
-          <SkillsS2 />
+          <Gallery images={DEMOS} />
         </section>
 
         <section id="three">
           <header className="major">
-            <h2>Projects</h2>
+            <h2>Technical Skills</h2>
           </header>
-          <Gallery images={DEMOS} />
+          <SkillsS2 />
         </section>
 
         <section id="four">

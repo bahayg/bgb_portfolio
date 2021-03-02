@@ -27,11 +27,11 @@ const GalleryItem = ({
 
   return (
     <article key={id} className="6u 12u$(xsmall) work-item">
-      <div>
+      <div className="zoom">
         {type === 'video' ? (
           <iframe
             title="Demo"
-            width="373"
+            width="343"
             height="210"
             src={source}
             frameborder="0"
@@ -45,8 +45,12 @@ const GalleryItem = ({
           </a>
         )}
       </div>
-      {caption ? <h3>{caption}</h3> : <h3>{captionSmall}</h3>}
-      <p>{description}</p> <br />
+      {caption ? (
+        <h3>{caption}</h3>
+      ) : (
+        <h3 style={{ marginTop: '25px' }}>{captionSmall}</h3>
+      )}
+      <p style={{ marginBottom: '15px' }}>{description}</p>
       <p>{tools}</p>
       {frontend ? (
         <a href={frontend} target="_blank" rel="noreferrer" className="button">
