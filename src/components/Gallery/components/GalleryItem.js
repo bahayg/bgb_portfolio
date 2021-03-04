@@ -37,7 +37,7 @@ const GalleryItem = ({
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            style={{ padding: '10px' }}
+            style={{ padding: '10px', borderRadius: '15px' }}
           ></iframe>
         ) : (
           <a href={url} target="_blank" rel="noreferrer">
