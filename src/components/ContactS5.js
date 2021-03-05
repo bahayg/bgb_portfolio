@@ -16,7 +16,11 @@ const ContactS5 = () => {
           <h3 className="icon fa-envelope-o">
             <span className="label">Email</span>
           </h3>
-          <a href="mailto:Bahay Gulle Bilgi <bahayg@gmail.com>">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:Bahay Gulle Bilgi <bahayg@gmail.com>"
+          >
             bahayg@gmail.com
           </a>
         </li>

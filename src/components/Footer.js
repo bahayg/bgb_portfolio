@@ -38,7 +38,7 @@ const Footer = () => (
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:<bahayg@gmail.com>"
+            href="mailto:Bahay Gulle Bilgi <bahayg@gmail.com>"
             className="icon fa-envelope"
           >
             <span className="label">Email</span>
