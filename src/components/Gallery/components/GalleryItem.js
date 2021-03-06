@@ -34,7 +34,7 @@ const GalleryItem = ({
             width="343"
             height="210"
             src={source}
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             style={{ padding: '10px', borderRadius: '15px' }}
@@ -48,7 +48,7 @@ const GalleryItem = ({
       {caption ? (
         <h3>{caption}</h3>
       ) : (
-        <h3 style={{ marginTop: '25px' }}>{captionSmall}</h3>
+        <h3 style={{ marginTop: '20px' }}>{captionSmall}</h3>
       )}
       <p style={{ marginBottom: '15px' }}>{description}</p>
       <p>{tools}</p>
@@ -81,15 +81,15 @@ GalleryItem.propTypes = {
   id: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired,
-  caption: PropTypes.string.isRequired,
-  captionSmall: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  tools: PropTypes.string.isRequired,
-  frontend: PropTypes.string.isRequired,
-  backend: PropTypes.string.isRequired,
-  live: PropTypes.string.isRequired,
-  github: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  caption: PropTypes.string,
+  captionSmall: PropTypes.string,
+  description: PropTypes.string,
+  tools: PropTypes.string,
+  frontend: PropTypes.string,
+  backend: PropTypes.string,
+  live: PropTypes.string,
+  github: PropTypes.string,
+  url: PropTypes.string,
   //   position: PropTypes.string.isRequired,
   //   toggleLightbox: PropTypes.func.isRequired,
 }

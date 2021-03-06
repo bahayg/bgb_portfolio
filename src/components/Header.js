@@ -6,7 +6,7 @@ import portfolioPicture from '../assets/images/portfolioPicture.jpg'
 const Header = () => (
   <header id="header">
     <div className="inner">
-      <a href="#" className="image portfolioPicture">
+      <a href="/#" className="image portfolioPicture">
         <img src={portfolioPicture} alt="Bahay's portrait" />
       </a>
       <h1>

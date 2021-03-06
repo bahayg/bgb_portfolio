@@ -40,7 +40,12 @@ const HomeIndex = () => {
               academia.
               <ul className="actions" style={{ marginTop: 30 }}>
                 <li>
-                  <a onClick={handleShowMore} className="button">
+                  <a
+                    href="/#"
+                    aria-hidden="true"
+                    onClick={handleShowMore}
+                    className="button"
+                  >
                     Learn More
                   </a>
                 </li>
@@ -76,7 +81,12 @@ const HomeIndex = () => {
               learning, diversity, and collaboration are core values. 
               <ul className="actions" style={{ marginTop: 30 }}>
                 <li>
-                  <a onClick={handleShowMore} className="button">
+                  <a
+                    href="/#"
+                    aria-hidden="true"
+                    onClick={handleShowMore}
+                    className="button"
+                  >
                     Show Less
                   </a>
                 </li>
