@@ -48,7 +48,7 @@ const Footer = () => (
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://drive.google.com/file/d/18QQ9UuYVDusSE-7ivwMTUPlXsPw35frM/view"
+            href="https://drive.google.com/file/d/1zGtkjdEnJA5wi80x7yXvYxgjoaUmkiS0/view"
             className="icon fa-file"
           >
             <span className="label">Resume</span>
