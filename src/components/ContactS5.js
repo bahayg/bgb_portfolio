@@ -31,10 +31,10 @@ const ContactS5 = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/bahay-gulle-bilgi/"
+            href="https://www.linkedin.com/in/bahay-gulle-bilgi"
             style={{ whiteSpace: 'nowrap' }}
           >
-            https://www.linkedin.com/in/bahay-gulle-bilgi/
+            https://www.linkedin.com/in/bahay-gulle-bilgi
           </a>
         </li>
         <li>
@@ -49,8 +49,8 @@ const ContactS5 = () => {
           <h3 className="icon fa-medium">
             <span className="label">Medium</span>
           </h3>
-          <a target="_blank" rel="noreferrer" href="https://bahayg.medium.com/">
-            https://bahayg.medium.com/
+          <a target="_blank" rel="noreferrer" href="https://bahayg.medium.com">
+            https://bahayg.medium.com
           </a>
         </li>
       </ul>

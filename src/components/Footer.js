@@ -8,7 +8,7 @@ const Footer = () => (
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/bahay-gulle-bilgi/"
+            href="https://www.linkedin.com/in/bahay-gulle-bilgi"
             className="icon fa-linkedin-square"
           >
             <span className="label">LinkedIn</span>
@@ -28,7 +28,7 @@ const Footer = () => (
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://bahayg.medium.com/"
+            href="https://bahayg.medium.com"
             className="icon fa-medium"
           >
             <span className="label">Medium</span>

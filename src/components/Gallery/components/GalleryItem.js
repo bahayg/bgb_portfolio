@@ -69,7 +69,7 @@ const GalleryItem = ({
       ) : null}
       {github ? (
         <a href={github} target="_blank" rel="noreferrer" className="button">
-          Github Repo
+          GitHub Repo
         </a>
       ) : null}
     </article>
